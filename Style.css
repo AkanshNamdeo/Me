@@ -1,0 +1,168 @@
+/* Doing some styling in both Index and Me HTML file. */
+body{
+/* background: rgb(215, 241, 247); */
+/* background: rgba(115, 241, 247,.1);  'a'refers to alpha value for transparency and opacity,range--> 0-1 .*/
+ background:linear-gradient(to bottom,lightpink,whitesmoke,lightblue);  
+ 
+ /* background-size:100px;  px better to use .*/
+/* background: linear-gradient(-200deg,rgb(125, 158, 209),rgba(140, 436, 342,0.4)); */
+ /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgOfN_TBtA2hkrlchZBh2K7TsZlzwpdnYBlQ&usqp=CAU);  */
+/* background-repeat: no-repeat; */
+font-size: 4.2mm;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* font-size: 1.02em;  em for relatively size formation for text. 2em twice the text size.*/
+/* background-size:cover; */
+/* background-image:url();  */
+/* SELECTORS: Ways of grabbimg and manipulate the HTML. Target for styling.   
+Headers,classes and ids are selectors .*/
+}
+
+.NAME{  /* . for selecting a 'class'of name-> Name*/
+color:orangered;
+font-family:Arial, Helvetica, sans-serif;
+font-size:xx-large;
+position:initial;
+}
+.MEE{color:orangered;font-size:30px;
+     text-align: center; font-weight: 800; font-smooth: normal;}  
+ .ME{ color:steelblue; text-align: center; }   /*background:rgb(225, 239, 242);*/
+/* .Passage{font-family: 'Times New Roman', Times, serif;
+        color:grey;} */
+.ClaSS{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: larger; }
+
+
+h1{text-align: center;}
+.H2{color:black;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    text-align:center; }
+#Head{   /* # for selecting an 'id' of name-> LOGO*/
+color:royalblue }
+/* Class and id very much same functionality but id-->unique and class--> same for bunch of other statements.  */
+#mee{ color:orangered;} 
+#YT{color: darkcyan;}
+.Head{font-family: 'Times New Roman', Times, serif;}
+.Table{
+    margin-left:30px;
+    display:inline;
+}
+#myphoto{justify-content:center;align-content: center;}
+/* H1--> ~blue. Name in webpage in H1 but in red color because class 'MEE' is asign to name and used here. */
+/* So class is preferred over header for styling purposes. */
+/* 'mee' id is also with class 'MEE' in name so color of name is red. */
+/* id is preferred over class.                  PREFERENCE ORDER: id>class>header */
+
+/*  What attribute is assign in HTML file is prefered over the CSS. 
+eg. 
+.ME class->red in CSS but orange in HTML so color of text 'INFO' is orange in webpage.  */
+
+h1{  
+color:steelblue;
+font-style:normal;
+text-align: center;
+}
+
+h2,h3{
+color:royalblue;
+font-style:inherit;
+text-align: center;
+}
+p{color:black; }
+thead{color:darkorange}
+img{align-self: center;}
+/* Pseudoselectors : To be done something on website(any animation,hovering,inlarge,etc.)*/
+ /* 'hover'is a "pseudoselector" applied in class 'Solinks',see on website. */
+.Solinks:hover{   
+color:red; float: right;
+}
+           li::first-line{color:steelblue;} /* In first HTML file.  */
+           a:link{color:darkcyan;} /* For links. */
+a:hover{color:red;
+        } /* Color when curser will be over anchor tag.*/
+/* a:visited{color:chocolate}Color after you have visited the site. */
+i:hover{color:red;} 
+.H4{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+
+/* ADVANCED SELECTORS */
+
+/* 1.Adjacent sibling selector: */
+h4 + p{ /* Every p tag after h4 will be made color blueviolet. */
+color:blueviolet;
+}
+
+/* 2.GENERAL SIBLING COMBINATOR: Here both things should follow each other;here they both are inside the 'form' tag. */
+            textarea ~ input{ color:crimson;} /* Every input after textarea will be of color crimson.*/
+
+/* 3.CHILD SELECTOR:Selects the direct children of say 'ul' .*/
+            ul > ol{
+                color: black ;
+                font-family:cursive;}
+            tr > th{color:orangered} /* Direct child of tr.*/
+            tr > td{color:black;}
+            img > a{color:darkcyan}
+/* Line 53 and 73 are equivalent in functioning. */
+
+/* 4. DESCENDENT SELECTOR: Similar to child selector but for all descendents. */
+             ul li{color:orangered;} /*li under ul colored aqua.*/
+
+/* Pseudoselectors are preferred over 'Advanced selectors'. eg. 53 preferred over 76. */
+
+/* ATTRIBUTE SELECTOR:Selecting attribute as img has 'src' attribute. */
+
+/* img[src^="https://www."]{ '^' For all images of source stating with 'https://www.' color: darkcyan;} '$' for end and'*' anywhere in link. 
+       many more like this.   */
+
+/*                                PROPERTIES: Color,background,font,size etc.are properties of element here.  */
+/* zcolor picker(Google search) can be used for better color styling/value in webpage. Used this in above working.*/
+
+
+/*  UNITS: px[pixel] ,%[percentages] etc are units. Two types: Absolute(cm,inch, etc.) and Relative(%,px,pt,pc, etc.) units */
+/* Used above please check if needed. */
+
+a{text-decoration: none; /* Now no underline in link text.*/ text-transform:uppercase; margin:1px; }
+
+/* CSS BOX MODEL: For positioning stuffs. */
+img[src*="/HTML/"]{ border: 3px solid black; size: 10px; /* (size type color)solid or dashed or dotted or double mainly.*/
+position:sticky; padding: 1px; align-self: center; justify-content: center;}
+/*padding:2px 2px 0 2px;}  Padding: top,right,bottom,left . Content,padding space,border,margin(outer part)    margin:10px;. */
+
+/* Float and Display types:  Display type-inline and block level. */
+.Para{ color:darkcyan; font-weight: bold;}
+.Inline{display:inline-block;}
+/*float:right;  */
+.Float1{display: inline;}
+.Float2{float:left; margin:30px; padding:2vw; border:3px solid orangered; display: inline; }
+.Float3{display:inline;}
+img[src*="www.google.com"]{margin:5%; }
+
+/* FLEXBOX: For layouts,alternative of float ad displays,components arrrangements. 2 components of flwxbox: Container and element. */
+.Container{
+    font-weight: bold;
+    margin-bottom:3px;
+    /* float:left; */
+    flex-direction:row;
+    display:flex;  /* Arrange the items in a row like menu bar in upper side in websites,see apple website.*/
+    /* flex-wrap:wrap;  nowrap is default value. */
+    
+}
+/* Shrink,grow and basis.(All with flex box.) In HTML code.*/
+/* Grid: Similar to flexbox, a display type bot is more manual; easy comparatively and provide more tools to layout. */
+/* Crearing grid:  */
+
+.Grid{
+    padding:3%;
+    /* margin: 30px; */
+    display:grid;
+    /* grid-template-rows:30px 60px;     Grid templates.
+    grid-template-columns:50px 150px 70px; */
+grid-template-rows: auto auto;
+grid-template-columns: auto auto;
+/* justify-content: center; */
+/* justify-content: space-evenly; */
+/* align-content:space-between; */
+border-radius: 3px;
+
+}
+
+
+
+
